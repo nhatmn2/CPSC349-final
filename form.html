@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="stylesheets/styles.css">-->
+</head>
+<body> 
+    <style>
+        a {
+            text-decoration: none;
+            display: inline-block;
+            padding: 8px 16px;
+          }
+          
+          a:hover {
+            background-color: #ddd;
+            color: black;
+          }
+          
+          .previous {
+            background-color: #f1f1f1;
+            color: black;
+          }
+          
+          .next {
+            background-color: #04AA6D;
+            color: white;
+          }
+    </style>  
+        <form>
+            <span>
+            Sign in to earn reward<br/> 
+            log in to your Amtrak Guest Rewards account or continue as guess
+            </span>
+            <button>
+                Sign in 
+            </button>
+            <hr/>
+            <br/>
+            <div><h1>Traveler</h1></div>
+            <table style="display:flex;">
+                <tr>
+                    <td>
+                        <label for="username">First Name</label><br/>
+                        <input type="text" id="username"  required  />
+                    </td>
+                    <td>
+                        <label for="middlename">Middle Name</label><br/>
+                        <input type="text" id="middlename"/>
+                    </td>
+                    <td>
+                        <label for="lastname">Last Name</label><br/>
+                        <input type="text" id="lastname" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="countrycode">Country Code</label><br/>
+                        <input type="number" id="countrycode"  required />
+                    </td>
+                    <td>
+                        <label for="phone">Mobile Phone Number:</label><br/>
+                        <input type="tel" id="phone" required />
+                    </td>
+                    <td>
+                        <label for="email">Email:</label><br/>
+                        <input type="email" id="email"  required placeholder="email@starfleet.com"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="DateOfBirth">Date of Birth:</label><br/>
+                        <input type="date" id="DateOfBirth" />
+                    </td>
+                    <td>
+                        <label for="reward">Amtrak guess reward number</label><br/>
+                        <input type="text" id="reward" />
+                    </td>
+                    <td>
+                        <label for="alert">Alert</label><br/>
+                            <input type="radio" name="size" value="Text">Text
+                            <input type="radio" name="size" value="Email">Email
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            <hr/>
+            <div>
+                <h4>Share your travel plan</h4>
+                <h7>Add up to three email addresses to receive your travel details. Payment and billing information will not be shared</h7>
+            </div>
+            <br/>
+            <div>
+                <input type="checkbox"/>&nbsp; Send eticket
+                <input type="checkbox"/>&nbsp; Send itinerary
+                <label for="email">Email:</label><br/>
+                    <input type="email" id="email" placeholder="email"/>
+                <button>Add email</button>
+            </div>
+                <a href="#" class="previous">&laquo; Back</a>
+                <a href="#" class="next">Continue &raquo;</a>
+            
+        </form>
+</body>
+
+</html>
